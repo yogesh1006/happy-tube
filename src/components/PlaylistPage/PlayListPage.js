@@ -4,7 +4,7 @@ import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 import "./playlistPage.css";
 import { useData } from "../../dataContext/DataContext";
 
-export default function PlaylistPage() {
+export default function PlayListPage() {
   const {state}=useData();
   return (
     <div>
