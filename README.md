@@ -1,3 +1,20 @@
+
+{/* <Link to={{ pathname: `/video/${video.id}`}}>
+<ReactPlayer 
+url={`https://www.youtube.com/watch?v=${video.id}`}
+  width="250px"
+  height="200px"
+  light={video.thumbnailImgUrl}
+  playIcon
+/> 
+<div className="videos">
+<h5 style={{color:"black"}}>{video.title}</h5>
+ <small style={{color:"GrayText"}}>{video.channelName}</small>
+</div>
+ 
+</Link> */}
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
