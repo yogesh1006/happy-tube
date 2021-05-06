@@ -7,7 +7,7 @@ import VideoPage from './components/VideoPage/VideoPage';
 import LikeVideo from './components/LikedVideos/LikedVideo'
 import History from './components/History/History';
 import PlaylistPage from './components/PlaylistPage/PlayListPage';
-import PlaylistVideos from './components/playlistVideos/PlayListVideos';
+import PlayListVideos from './components/playlistVideos/PlayListVideos';
 
 function App() {
   return (
@@ -23,7 +23,9 @@ function App() {
             <Route path="/likes" component={LikeVideo}/>
             <Route path="/history" component={History}/>
             <Route path="/playlist" component={PlaylistPage}/>
-            <Route path="/playlist/:playlistId" component={PlaylistVideos} />
+            <Route path="/playlist/:playlistId">
+              <PlayListVideos/>
+            </Route>
 
 
       </Switch>

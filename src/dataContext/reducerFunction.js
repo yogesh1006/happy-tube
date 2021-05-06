@@ -1,16 +1,6 @@
 export function reducerFunction(state, action) {
-  console.log(state.likedVideos);
 
-  // function toggelLikedVideo(state, { videoId, isVideoAlreadyLiked }) {
-  //     console.log(videoId,isVideoAlreadyLiked);
-  //   let copyState = { ...state }
-  //   if (isVideoAlreadyLiked) {
-  //       copyState.likedVideos = state.likedVideos.filter((id) => id !== videoId);
-  //   } else {
-  //       copyState.likedVideos = state.likedVideos.push(videoId);
-  //   }
-  //   return copyState;
-  // }
+
   const createPlaylist = (state, { playlistName }) => {
     const stateCopy = { ...state };
 
@@ -59,7 +49,6 @@ export function reducerFunction(state, action) {
 
   switch (action.type) {
     case "TOGGLE_LIKED_VIDEO":
-      console.log(state);
       return {
         likedVideos: [...state.likedVideos, action.payload],
         history: state.history,
@@ -67,19 +56,15 @@ export function reducerFunction(state, action) {
       };
 
     case "UPDATE_HISTORY":
-      console.log(action.payload);
       return updateHistory(state, action.payload);
 
     case "CREATE_PLAYLIST":
-      console.log(action.payload);
       return createPlaylist(state, action.payload);
 
     case "ADD_TO_PLAYLIST":
-      console.log(action.payload);
       return addToPlaylist(state, action.payload);
 
     case "REMOVE_FROM_PLAYLIST":
-      console.log(action.payload);
       return removeFromPlaylist(state, action.payload);
 
     default:

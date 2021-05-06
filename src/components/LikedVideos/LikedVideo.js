@@ -24,7 +24,7 @@ export default function LikedVideo() {
 
   return (
     <div className="liked-video-container">
-      <h2 className="section-heading">Liked Videos</h2>
+      <h2 style={{padding:"0.5rem",letterSpacing:"3px",fontSize:"1rem"}}>Liked Videos</h2>
 
       {videosToDisplay && <LikedVideoCard videos={videosToDisplay} />}
     </div>

@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from "react-router-dom"
 // import "./likedVideo.css";
 function LikedVideoCard({videos}) {
-    console.log(videos);
     return (
         <div>
             {videos.map(video=>(

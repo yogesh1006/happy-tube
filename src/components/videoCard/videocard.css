@@ -37,11 +37,8 @@
     width: calc(100%);
     line-height: 1.3rem;
     font-weight: 500;
-    /* letter-spacing: 0.5px; */
     max-height: 2.6rem;
     overflow: hidden;
-    /* text-overflow: ellipsis; */
-    /* white-space: white-space; */
   }
   
   .card-channel-name {

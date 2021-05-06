@@ -20,18 +20,6 @@ function VideoPageCard({ videoId }) {
     setIsPlaylistModalOpen(!isPlaylistModalOpen);
   };
 
-  // useEffect(() => {
-  //   dispatch({
-  //     type:"UPDATE_HISTORY",
-  //     payload:
-  //       videoId});
-  //   window.scroll({
-  //     top: 0,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, [videoId]);
-
   const {
     title,
     channelImageUrl,
@@ -39,8 +27,6 @@ function VideoPageCard({ videoId }) {
     channelName,
     likes,
   } = videos.find((video) => video.id === videoId);
-
-  // const isVideoLiked = state.likedVideos.includes(videoId);
 
   let videoLikeHandler = (videoId) => {
     let existInLikes = false;
@@ -59,6 +45,7 @@ function VideoPageCard({ videoId }) {
 
   useEffect(() => {
     dispatch({ type: "UPDATE_HISTORY", payload: videoId });
+    // eslint-disable-next-line
   }, [videoId]);
 
   const customStyles = {

@@ -13,8 +13,8 @@ const initialState = {
   history:[],
   playlist:[{
     id: 1,
-    name: "Playlist 1",
-    videos: ["KUJsaM-hAjs", "Vi4Pr8bUMZs"],
+    name: "My playlist 1",
+    videos: ["2WJL19wDH68"],
   },],
 
 };

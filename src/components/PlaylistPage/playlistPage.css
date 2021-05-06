@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
 .playlist-img-container {
@@ -14,12 +14,6 @@
 .playlist-container .card-title {
   margin: 0.5rem 0;
   font-size: 1.2rem;
-}
-
-.close-btn-container {
-  position: absolute;
-  top: 0.5rem;
-  left: 1rem;
 }
 
 .empty-videos {

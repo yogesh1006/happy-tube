@@ -7,18 +7,8 @@ export default function History() {
   const { state } = useData();
 
   let videosToDisplay = [];
-  console.log("history",videosToDisplay);
   videosToDisplay = getVideosToDisplay();
   function getVideosToDisplay() {
-    // videos.forEach((video) => {
-    //   if (state.history.includes(video.id)) {
-    //     videosToDisplay.push(video);
-    //   }
-    //   if (videosToDisplay.length === state.history.length) {
-    //     return videosToDisplay;
-    //   }
-    // });
-    // return videosToDisplay;
 
     state.history.forEach((videoId) => {
       const historyVideo = videos.find(
@@ -35,7 +25,7 @@ export default function History() {
 
   return (
     <>
-      <h2 className="section-heading">Recent Videos</h2>
+      <h2  style={{padding:"0.5rem",letterSpacing:"3px",fontSize:"1rem"}}>Recent Videos</h2>
       {videosToDisplay.map((video) => (
         <Link
           to={`/video/${video.id}`}

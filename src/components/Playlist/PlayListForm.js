@@ -1,4 +1,5 @@
 import React,{useRef} from "react";
+import './playlistform.css'
 // import { useData } from "../../dataContext/DataContext";
 
 function PlayListForm({state,dispatch,streamVideo}) {
@@ -34,9 +35,6 @@ function PlayListForm({state,dispatch,streamVideo}) {
   return (
     <div className="playlist-form">
       <h3 className="section-heading">Your Playlists</h3>
-      {/* <span className="close" onClick={onPlaylistModalClose}>
-        &times;
-      </span> */}
       <ul className="playlist-list">
         {state.playlist.map((list) => {
           const isVideoPartOfPlaylist = list.videos.includes(streamVideo);
